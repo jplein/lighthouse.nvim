@@ -28,6 +28,8 @@ local dark = {
   popupBG = "#272727",
   popupFG = "#ffffff",
   cursorLineBG = "#252525",
+  cursorBG = "#009fce",
+  cursorFG = "#000000",
   commentFG = "#919191",
   stringFG = "#9ad7b5",
   keywordFG = "#bdc7dd",
@@ -83,6 +85,8 @@ local light = {
   popupBG = "#ffffff",
   popupFG = "#000000",
   cursorLineBG = "#ffffff",
+  cursorBG = "#000000",
+  cursorFG = "#ffffff",
   commentFG = "#6a6a6a",
   stringFG = "#006424",
   keywordFG = "#304aff",
@@ -146,6 +150,8 @@ local popupBG = p.popupBG
 local popupFG = p.popupFG
 
 local cursorLineBG = p.cursorLineBG
+local cursorBG = p.cursorBG
+local cursorFG = p.cursorFG
 
 local commentFG = p.commentFG
 local stringFG = p.stringFG
@@ -485,6 +491,11 @@ vim.api.nvim_set_hl(0, "@markup.math.latex", { fg = nil, bg = slightHighlightBG 
 
 -- Code blocks using the orlando plugin
 vim.api.nvim_set_hl(0, "OrlandoCodeBlock", { fg = nil, bg = slightHighlightBG })
+
+-- Highlight groups used by Wolf - no effect on Neovim in the termainal
+-- Only foreground and background attributes are used
+vim.api.nvim_set_hl(0, "WolfCursor", { fg = cursorFG, bg = cursorBG })
+vim.api.nvim_set_hl(0, "WolfTitlebar", { fg = foreground, bg = background })
 
 -- -- NERDTREE --
 vim.api.nvim_set_hl(0, "NERDTreeHelp", { link = "Comment" })

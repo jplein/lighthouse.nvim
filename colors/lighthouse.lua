@@ -200,8 +200,8 @@ vim.g.colors_name = 'lighthouse'
 
 
 -- -- Basic fonts --
-vim.api.nvim_set_hl(0, "Normal", { fg = nil, bg = nil })
-vim.api.nvim_set_hl(0, "NormalNC", { fg = nil, bg = nil })
+vim.api.nvim_set_hl(0, "Normal", { fg = foreground, bg = background })
+vim.api.nvim_set_hl(0, "NormalNC", { fg = foreground, bg = background })
 
 -- -- UI --
 vim.api.nvim_set_hl(0, "IncSearch", { bg = search1BG })

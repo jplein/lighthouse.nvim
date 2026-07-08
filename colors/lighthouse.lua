@@ -495,7 +495,7 @@ vim.api.nvim_set_hl(0, "OrlandoCodeBlock", { fg = nil, bg = slightHighlightBG })
 -- Highlight groups used by Wolf - no effect on Neovim in the termainal
 -- Only foreground and background attributes are used
 vim.api.nvim_set_hl(0, "WolfCursor", { fg = cursorFG, bg = cursorBG })
-vim.api.nvim_set_hl(0, "WolfTitlebar", { fg = foreground, bg = background })
+-- vim.api.nvim_set_hl(0, "WolfTitlebar", { fg = foreground, bg = background })
 
 -- -- NERDTREE --
 vim.api.nvim_set_hl(0, "NERDTreeHelp", { link = "Comment" })
